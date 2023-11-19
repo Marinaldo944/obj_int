@@ -5,3 +5,4 @@ Os dispositivos foram separados em duas classes:
 - O gerenciador: responsável por analisar a umidade do solo, temperatura e umidade do ar, coletar o nível das fontes de água e o status delas, coordenar os módulos clientes, acionando-os quando necessária a irrigação do solo;
 - Os clientes: responsáveis por gerenciar cada fonte de água disponível e reportar ao módulo gerenciador o nível de água a a situação da fonte, se está disponível para uso ou não e ligar e desligar as bombas de irrigação sob o comando do módulo gerenciador.
 Para a conexão com a internet foi utilizado o protocolo MQTT com o uso do servidor (broker) Mosquitto para troca de informações entre os módulos.
+Neste protótipo foram usadas 03 (três) fontes de água e a cada uma delas foi atribuído um dispositivo cliente. Cada um deles publica e assina tópicos diferentes, por essa razão existem códigos-fontes diferentes para cada cliente. 
